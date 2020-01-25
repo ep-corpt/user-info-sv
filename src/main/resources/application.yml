@@ -1,0 +1,27 @@
+server:
+  port: 9020
+
+spring:
+  application:
+    name: user-info-api
+  kafka:
+    bootstrap-servers: localhost:32771
+    consumer:
+      group-id: userinfo
+  datasource:
+    url: jdbc:postgresql://192.168.1.45:5432/userinfo
+    username: postgres
+    password: 055090323
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka
+
+config:
+  kafka:
+    topic: register
+
+logging:
+  level:
+    com.epcorpt: DEBUG

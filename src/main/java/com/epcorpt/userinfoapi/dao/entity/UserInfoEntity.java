@@ -1,7 +1,9 @@
 package com.epcorpt.userinfoapi.dao.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +14,8 @@ import javax.persistence.Table;
 @Entity
 @Builder
 @Table(name = "user_info")
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserInfoEntity {
 
     @Id
